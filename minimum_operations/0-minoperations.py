@@ -30,4 +30,4 @@ if __name__ == "__main__":
         print("Result is:", 0)
     else:
         print("Final string: {}".format(final_string))
-        print("Number of operations: {}".format(num
+        print("Number of operations: {}".format(num_operations))
