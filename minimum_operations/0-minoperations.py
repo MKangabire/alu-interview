@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""prints the number of operations"""
 
 def minOperations(n):
+	"""method to print the number of operations"""
 	operations = 0
 	result = "H"
 
