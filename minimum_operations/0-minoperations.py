@@ -1,26 +1,33 @@
 #!/usr/bin/python3
-"""prints the number of operations"""
+"""Module-level docstring."""
 
 def minOperations(n):
-	"""method to print the number of operations"""
-	operations = 0
-	result = "H"
+    """
+    Print the number of operations.
 
-	while len(result) < n:
-		result += result
-		operations += 1
-	
-	return result, operations
+    Parameters:
+    - n (int): Target length.
 
-n = int(input("Enter the target length (n): "))
+    Returns:
+    - tuple: A tuple containing the final string and the number of operations.
+    """
+    operations = 0
+    result = "H"
 
-# Call the minOperations function with the user-provided value of 'n'
-final_string, num_operations = minOperations(n)
+    while len(result) < n:
+        result += result
+        operations += 1
 
-# Check if the length of the final string is less than 'n' and return 0 if true
-if len(final_string) < n:
-    print("If n is impossible to achieve, return 0")
-    print("Result is:", 0)
-else:
-    print("Final string: {}".format(final_string))
-    print("Number of operations: {}".format(num_operations))
+    return result, operations
+
+if __name__ == "__main__":
+    n = int(input("Enter the target length (n): "))
+
+    final_string, num_operations = minOperations(n)
+
+    if len(final_string) < n:
+        print("If n is impossible to achieve, return 0")
+        print("Result is:", 0)
+    else:
+        print("Final string: {}".format(final_string))
+        print("Number of operations: {}".format(num
