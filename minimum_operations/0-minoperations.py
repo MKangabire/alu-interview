@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module-level docstring."""
 
+
 def minOperations(n):
     """
     Print the number of operations.
