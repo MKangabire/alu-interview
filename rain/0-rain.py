@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """rain.py"""
 
+
 def calculate_water(arr, n):
     """calculates the maximum size of the walls"""
-	
     max_size = 0
     left_max = [0] * n
     right_max = [0] * n
@@ -20,6 +20,7 @@ def calculate_water(arr, n):
         max_size += max(0, min(left_max[i], right_max[i]) - arr[i])
 
     return max_size
+
 
 def rain(walls):
     """calculates the rain retained acording to the len of walls"""
