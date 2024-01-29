@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""rain.py"""
 
 def calculate_water(arr, n):
     """calculates the maximum size of the walls"""
