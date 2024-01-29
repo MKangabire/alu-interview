@@ -4,6 +4,9 @@
 
 def calculate_water(arr, n):
     """calculates the maximum size of the walls"""
+    if not arr:
+	return 0
+
     max_size = 0
     left_max = [0] * n
     right_max = [0] * n
